@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"verify/RLC-NFT-Combine.sol": "AddressUtils"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"verify/RLC-NFT-Combine.sol": {
+			"keccak256": "0x47608cf482a686998318dde0d81d9ee6fc21f741637b4154de2c490c3ee73565",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7a8e6fff1daddd92c81c2050385c4700d4b4414ac90b1d052cd30fdd6f7c5559",
+				"dweb:/ipfs/QmbKUcaap5ywULUcn2eZck4VMBkeH6fgsAPQQgws9iVZTu"
+			]
+		}
+	},
+	"version": 1
+}

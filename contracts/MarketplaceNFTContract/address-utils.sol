@@ -7,8 +7,7 @@ pragma solidity 0.8.0;
  * https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/Address.sol
  * Requires EIP-1052.
  */
-library AddressUtils
-{
+library AddressUtils{
 
   /**
    * @dev Returns whether the target address is a contract.

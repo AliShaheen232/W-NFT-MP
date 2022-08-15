@@ -12,7 +12,7 @@ import "./address-utils.sol";
 contract NFToken is
   ERC721,
   SupportsInterface
-{
+  {
   using AddressUtils for address;
 
   /**

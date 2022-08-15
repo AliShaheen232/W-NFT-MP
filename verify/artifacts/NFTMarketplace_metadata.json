@@ -1,0 +1,449 @@
+{
+	"compiler": {
+		"version": "0.8.4+commit.c7e474f2"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "wrapToken",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "feePercentage",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address payable",
+						"name": "feeDestinationAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "_feeDestinationAddress",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_feePercentage",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_wrapToken",
+				"outputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "nftContractId",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "cancel",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "nftContractId",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "buyerAccount",
+						"type": "address"
+					}
+				],
+				"name": "closeMarketForAuctionType",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "nftContractId",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					}
+				],
+				"name": "closeMarketForFixedType",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "nftContractId",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "getMarketObj",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "contractAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "tokenId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum NFTMarketplace.EOrderType",
+								"name": "orderType",
+								"type": "uint8"
+							},
+							{
+								"internalType": "enum NFTMarketplace.EOrderStatus",
+								"name": "orderStatus",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint256",
+								"name": "askAmount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "maxAskAmount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "currentOwner",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "newOwner",
+								"type": "address"
+							}
+						],
+						"internalType": "struct NFTMarketplace.Market",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"name": "markets",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "contractAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum NFTMarketplace.EOrderType",
+						"name": "orderType",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum NFTMarketplace.EOrderStatus",
+						"name": "orderStatus",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "askAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "maxAskAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "currentOwner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "nftContractId",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "maxPrice",
+						"type": "uint256"
+					}
+				],
+				"name": "openMarketForAuctionType",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "nftContractId",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					}
+				],
+				"name": "openMarketForFixedType",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "erc20Token",
+						"type": "address"
+					}
+				],
+				"name": "setERC20Token",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "value",
+						"type": "address"
+					}
+				],
+				"name": "setFeeDestinationAddress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "setFeePercentage",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"events": {
+				"OwnershipTransferred(address,address)": {
+					"notice": "Event OwnershipTransferred is used to log that a ownership change of the token has occured"
+				}
+			},
+			"kind": "user",
+			"methods": {
+				"owner()": {
+					"notice": "owner() returns the currently assigned owner of the Token"
+				},
+				"transferOwnership(address)": {
+					"notice": "transferOwnership will assign the {newOwner} as owner"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"verify/NFT-MP-Combine.sol": "NFTMarketplace"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"verify/NFT-MP-Combine.sol": {
+			"keccak256": "0x3981b1aad4b91146d1361798900b377ef44d4245c99eeff9f1384598ada386bb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://369f49c084cf15aa72c77f7871527d40c6f9026df23a9e0370490acb0b33cde5",
+				"dweb:/ipfs/QmeJfSHA8BfKfRTmPkx7m17aSXSRSvwC84Caz6cS49HTJa"
+			]
+		}
+	},
+	"version": 1
+}

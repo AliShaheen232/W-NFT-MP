@@ -1,0 +1,97 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_operator",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_data",
+						"type": "bytes"
+					}
+				],
+				"name": "onERC721Received",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"onERC721Received(address,address,uint256,bytes)": {
+					"details": "Handle the receipt of a NFT. The ERC721 smart contract calls this function on the recipient after a `transfer`. This function MAY throw to revert and reject the transfer. Return of other than the magic value MUST result in the transaction being reverted. Returns `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))` unless throwing.",
+					"params": {
+						"_data": "Additional data with no specified format.",
+						"_from": "The address which previously owned the token.",
+						"_operator": "The address which called `safeTransferFrom` function.",
+						"_tokenId": "The NFT identifier which is being transferred."
+					},
+					"returns": {
+						"_0": "Returns `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"onERC721Received(address,address,uint256,bytes)": {
+					"notice": "The contract address is always the message sender. A wallet/broker/auction application MUST implement the wallet interface if it will accept safe transfers."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"verify/RLC-NFT-Combine.sol": "ERC721TokenReceiver"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"verify/RLC-NFT-Combine.sol": {
+			"keccak256": "0x47608cf482a686998318dde0d81d9ee6fc21f741637b4154de2c490c3ee73565",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7a8e6fff1daddd92c81c2050385c4700d4b4414ac90b1d052cd30fdd6f7c5559",
+				"dweb:/ipfs/QmbKUcaap5ywULUcn2eZck4VMBkeH6fgsAPQQgws9iVZTu"
+			]
+		}
+	},
+	"version": 1
+}

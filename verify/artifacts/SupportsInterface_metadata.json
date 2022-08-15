@@ -1,0 +1,88 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "_interfaceID",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"details": "Contract constructor."
+				},
+				"supportsInterface(bytes4)": {
+					"details": "Function to check which interfaces are suported by this contract.",
+					"params": {
+						"_interfaceID": "Id of the interface."
+					},
+					"returns": {
+						"_0": "True if _interfaceID is supported, false otherwise."
+					}
+				}
+			},
+			"stateVariables": {
+				"supportedInterfaces": {
+					"details": "Mapping of supported intefraces. You must not set element 0xffffffff to true."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"verify/RLC-NFT-Combine.sol": "SupportsInterface"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"verify/RLC-NFT-Combine.sol": {
+			"keccak256": "0x47608cf482a686998318dde0d81d9ee6fc21f741637b4154de2c490c3ee73565",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7a8e6fff1daddd92c81c2050385c4700d4b4414ac90b1d052cd30fdd6f7c5559",
+				"dweb:/ipfs/QmbKUcaap5ywULUcn2eZck4VMBkeH6fgsAPQQgws9iVZTu"
+			]
+		}
+	},
+	"version": 1
+}

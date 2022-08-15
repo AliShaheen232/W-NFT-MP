@@ -1,0 +1,115 @@
+{
+	"compiler": {
+		"version": "0.8.4+commit.c7e474f2"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"events": {
+				"OwnershipTransferred(address,address)": {
+					"notice": "Event OwnershipTransferred is used to log that a ownership change of the token has occured"
+				}
+			},
+			"kind": "user",
+			"methods": {
+				"owner()": {
+					"notice": "owner() returns the currently assigned owner of the Token"
+				},
+				"transferOwnership(address)": {
+					"notice": "transferOwnership will assign the {newOwner} as owner"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"verify/NFT-MP-Combine.sol": "Ownable"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"verify/NFT-MP-Combine.sol": {
+			"keccak256": "0x3981b1aad4b91146d1361798900b377ef44d4245c99eeff9f1384598ada386bb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://369f49c084cf15aa72c77f7871527d40c6f9026df23a9e0370490acb0b33cde5",
+				"dweb:/ipfs/QmeJfSHA8BfKfRTmPkx7m17aSXSRSvwC84Caz6cS49HTJa"
+			]
+		}
+	},
+	"version": 1
+}

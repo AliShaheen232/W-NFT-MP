@@ -1,0 +1,361 @@
+{
+	"compiler": {
+		"version": "0.8.4+commit.c7e474f2"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_approved",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenid",
+						"type": "uint256"
+					}
+				],
+				"name": "getRoyalityDetails",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "percentage",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "creator",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "ownerOf",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_ids",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_values",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_data",
+						"type": "bytes"
+					}
+				],
+				"name": "safeBatchTransferFrom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "safeTransferFrom",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "safeTransferFrom",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_data",
+						"type": "bytes"
+					}
+				],
+				"name": "safeTransferFrom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_operator",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "_approved",
+						"type": "bool"
+					}
+				],
+				"name": "setApprovalForAll",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"approve(address,uint256)": {
+					"details": "The zero address indicates there is no approved address.  Throws unless `msg.sender` is the current NFT owner, or an authorized  operator of the current owner.",
+					"params": {
+						"_approved": "The new approved NFT controller",
+						"_tokenId": "The NFT to approve"
+					}
+				},
+				"balanceOf(address,uint256)": {
+					"params": {
+						"_id": "ID of the token",
+						"_owner": "The address of the token holder"
+					},
+					"returns": {
+						"_0": "The _owner's balance of the token type requested"
+					}
+				},
+				"ownerOf(uint256)": {
+					"details": "NFTs assigned to zero address are considered invalid, and queries  about them do throw.",
+					"params": {
+						"tokenId": "The identifier for an NFT"
+					},
+					"returns": {
+						"owner": " The address of the owner of the NFT"
+					}
+				},
+				"safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)": {
+					"details": "Caller must be approved to manage the tokens being transferred out of the `_from` account (see \"Approval\" section of the standard). MUST revert if `_to` is the zero address. MUST revert if length of `_ids` is not the same as length of `_values`. MUST revert if any of the balance(s) of the holder(s) for token(s) in `_ids` is lower than the respective amount(s) in `_values` sent to the recipient. MUST revert on any other error.         MUST emit `TransferSingle` or `TransferBatch` event(s) such that all the balance changes are reflected (see \"Safe Transfer Rules\" section of the standard). Balance changes and events MUST follow the ordering of the arrays (_ids[0]/_values[0] before _ids[1]/_values[1], etc). After the above conditions for the transfer(s) in the batch are met, this function MUST check if `_to` is a smart contract (e.g. code size > 0). If so, it MUST call the relevant `ERC1155TokenReceiver` hook(s) on `_to` and act appropriately (see \"Safe Transfer Rules\" section of the standard).                      ",
+					"params": {
+						"_data": "Additional data with no specified format, MUST be sent unaltered in call to the `ERC1155TokenReceiver` hook(s) on `_to`",
+						"_from": "Source address",
+						"_ids": "IDs of each token type (order and length must match _values array)",
+						"_to": "Target address",
+						"_values": "Transfer amounts per token type (order and length must match _ids array)"
+					}
+				},
+				"safeTransferFrom(address,address,uint256)": {
+					"details": "This works identically to the other function with an extra data parameter,  except this function just sets data to \"\".",
+					"params": {
+						"_from": "The current owner of the NFT",
+						"_to": "The new owner",
+						"_tokenId": "The NFT to transfer"
+					}
+				},
+				"safeTransferFrom(address,address,uint256,bytes)": {
+					"details": "Throws unless `msg.sender` is the current owner, an authorized  operator, or the approved address for this NFT. Throws if `_from` is  not the current owner. Throws if `_to` is the zero address. Throws if  `_tokenId` is not a valid NFT. When transfer is complete, this function  checks if `_to` is a smart contract (code size > 0). If so, it calls  `onERC721Received` on `_to` and throws if the return value is not  `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`.",
+					"params": {
+						"_from": "The current owner of the NFT",
+						"_to": "The new owner",
+						"_tokenId": "The NFT to transfer",
+						"data": "Additional data with no specified format, sent in call to `_to`"
+					}
+				},
+				"safeTransferFrom(address,address,uint256,uint256,bytes)": {
+					"details": "Caller must be approved to manage the tokens being transferred out of the `_from` account (see \"Approval\" section of the standard). MUST revert if `_to` is the zero address. MUST revert if balance of holder for token `_id` is lower than the `_value` sent. MUST revert on any other error. MUST emit the `TransferSingle` event to reflect the balance change (see \"Safe Transfer Rules\" section of the standard). After the above conditions are met, this function MUST check if `_to` is a smart contract (e.g. code size > 0). If so, it MUST call `onERC1155Received` on `_to` and act appropriately (see \"Safe Transfer Rules\" section of the standard).",
+					"params": {
+						"_data": "Additional data with no specified format, MUST be sent unaltered in call to `onERC1155Received` on `_to`",
+						"_from": "Source address",
+						"_id": "ID of the token type",
+						"_to": "Target address",
+						"_value": "Transfer amount"
+					}
+				},
+				"setApprovalForAll(address,bool)": {
+					"details": "MUST emit the ApprovalForAll event on success.",
+					"params": {
+						"_approved": "True if the operator is approved, false to revoke approval",
+						"_operator": "Address to add to the set of authorized operators"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"approve(address,uint256)": {
+					"notice": "Change or reaffirm the approved address for an NFT"
+				},
+				"balanceOf(address,uint256)": {
+					"notice": "Get the balance of an account's tokens."
+				},
+				"ownerOf(uint256)": {
+					"notice": "Find the owner of an NFT"
+				},
+				"safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)": {
+					"notice": "Transfers `_values` amount(s) of `_ids` from the `_from` address to the `_to` address specified (with safety call)."
+				},
+				"safeTransferFrom(address,address,uint256)": {
+					"notice": "Transfers the ownership of an NFT from one address to another address"
+				},
+				"safeTransferFrom(address,address,uint256,bytes)": {
+					"notice": "Transfers the ownership of an NFT from one address to another address"
+				},
+				"safeTransferFrom(address,address,uint256,uint256,bytes)": {
+					"notice": "Transfers `_value` amount of an `_id` from the `_from` address to the `_to` address specified (with safety call)."
+				},
+				"setApprovalForAll(address,bool)": {
+					"notice": "Enable or disable approval for a third party (\"operator\") to manage all of the caller's tokens."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"verify/NFT-MP-Combine.sol": "INFTContract"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"verify/NFT-MP-Combine.sol": {
+			"keccak256": "0x3981b1aad4b91146d1361798900b377ef44d4245c99eeff9f1384598ada386bb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://369f49c084cf15aa72c77f7871527d40c6f9026df23a9e0370490acb0b33cde5",
+				"dweb:/ipfs/QmeJfSHA8BfKfRTmPkx7m17aSXSRSvwC84Caz6cS49HTJa"
+			]
+		}
+	},
+	"version": 1
+}

@@ -10,7 +10,7 @@ import "./erc721-metadata.sol";
 contract NFTokenMetadata is
   NFToken,
   ERC721Metadata
-{
+  {
 
   /**
    * @dev A descriptive name for a collection of NFTs.
